@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mysunat Islam | Biomedical AI Portfolio - UAE/GCC Remote Ready</title>
+<title>Mysunat Islam | Biomedical AI & Healthcare Systems Portfolio</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,9 +17,11 @@
   --muted:#aebab2;
   --muted-2:#79867f;
   --accent:#7fc9ae;      /* sage teal - bioinformatics */
-  --accent-2:#e3b160;    /* warm gold - signal processing */
+  --accent-2:#e3b160;    /* warm gold - signal processing & pinned */
   --accent-3:#8fb0d6;    /* soft blue - digital twin */
   --accent-4:#d18f78;    /* soft terracotta - imaging */
+  --accent-5:#a78bfa;    /* soft violet - multi-agent & neuroengineering */
+  --accent-6:#38bdf8;    /* sky cyan - clinical ML & ERP */
   --line:rgba(243,241,234,0.10);
   --line-soft:rgba(243,241,234,0.06);
   --font-display:'Fraunces',serif;
@@ -356,12 +358,63 @@ section{ padding:110px 6%; position:relative; z-index:3; }
 .ptag.c-sig{ background:rgba(227,177,96,.14); color:var(--accent-2); }
 .ptag.c-twin{ background:rgba(143,176,214,.14); color:var(--accent-3); }
 .ptag.c-img{ background:rgba(209,143,120,.14); color:var(--accent-4); }
+.ptag.c-ai{ background:rgba(56,189,248,.14); color:var(--accent-6); }
+.ptag.c-agent{ background:rgba(167,139,250,.14); color:var(--accent-5); }
+.ptag.c-pinned{ background:rgba(227,177,96,.18); color:var(--accent-2); border:1px solid rgba(227,177,96,.35); }
 .pcard h3{ font-family:var(--font-display); font-size:1.25rem; font-weight:600; }
 .pcard p{ color:var(--muted); font-size:.93rem; flex:1; }
 .pcard p strong{ color:var(--ink); font-weight:600; }
 .pcard .view{ font-size:13px; font-weight:600; color:var(--accent); display:flex; align-items:center; gap:6px; }
 .pcard .view::after{ content:'->'; transition:transform .3s; }
 .pcard:hover .view::after{ transform:translateX(4px); }
+
+.filter-tabs{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:32px; }
+.filter-btn{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+  color:var(--muted);
+  padding:8px 18px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.25s;
+  font-family:inherit;
+}
+.filter-btn:hover, .filter-btn.active{
+  background:var(--accent);
+  color:#0d1816;
+  border-color:var(--accent);
+}
+.pcard-links{
+  display:flex;
+  gap:8px;
+  margin-top:auto;
+  flex-wrap:wrap;
+  padding-top:12px;
+  border-top:1px solid var(--line-soft);
+}
+.pcard-link{
+  font-size:11.5px;
+  font-weight:600;
+  padding:5px 11px;
+  border-radius:6px;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  border:1px solid var(--line);
+  color:var(--muted);
+  background:rgba(255,255,255,.02);
+  transition:.2s;
+}
+.pcard-link:hover{ border-color:var(--accent); color:var(--accent); background:rgba(127,201,174,.08); }
+.pcard-link.primary{
+  background:rgba(127,201,174,.14);
+  border-color:rgba(127,201,174,.35);
+  color:var(--accent);
+}
+.pcard-link.primary:hover{ background:var(--accent); color:#0d1816; }
 
 /* ---------- RESEARCH ---------- */
 .research-list{ display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
@@ -465,9 +518,11 @@ and decision-ready analysis.
 </p>
 
 <div class="hero-domains">
+<span>Clinical Digital Twins</span>
+<span>Multimodal Healthcare ML</span>
 <span>Early Biomarker Discovery</span>
-<span>Quantitative Imaging</span>
-<span>Rehab Robotics Simulation</span>
+<span>Multi-Agent Neuro-Rehab</span>
+<span>Spaceflight Biomechanics</span>
 <span>UAE/GCC Remote Delivery</span>
 </div>
 
@@ -480,48 +535,56 @@ and decision-ready analysis.
 <section id="offer">
 <div class="container">
 <div class="eyebrow">Problems Solved</div>
-<h2 class="section-title">Biomedical problems solved with measurable outcomes.</h2>
-<p class="section-intro">Each area below starts with the research bottleneck and ends with the outcome your team can use.</p>
+<h2 class="section-title">Biomedical &amp; healthcare systems problems solved with measurable outcomes.</h2>
+<p class="section-intro">Each area below starts with a critical clinical or research bottleneck and ends with a defensible, software-verified outcome.</p>
 
 <div class="offer-list">
 
 <div class="offer-row reveal">
-<div class="offer-num" style="background:rgba(127,201,174,.14); color:var(--accent);">01</div>
+<div class="offer-num" style="background:rgba(56,189,248,.14); color:var(--accent-6);">01</div>
 <div>
-<h3>Early Cancer Biomarker Discovery</h3>
-<p>Problem: PDAC early detection needs non-invasive biomarkers with stronger evidence. Impact: integrated 5 public datasets across 428 samples/regions and narrowed 628 malignant-switch genes into a 6 EV-miRNA panel with ROC AUC 0.935 and 10-fold CV AUC 0.919.</p>
+<h3>AI-Integrated Hospital Operations &amp; Facility Safety Twins</h3>
+<p><strong>Problem:</strong> Hospital operations and critical utilities (medical oxygen, MRI Zone IV, radiotherapy, HVAC, isolation) are isolated in silos without closed-loop safety response. <strong>Impact:</strong> Built AURA HealthOS with an interactive Three.js 3D facility safety twin across 22 connected departments, P1/P2 concurrent escalation, and a 6-stage closed loop (detect &rarr; contain &rarr; acknowledge &rarr; correct &rarr; verify &rarr; restore) with bounded automated controls.</p>
 </div>
 </div>
 
 <div class="offer-row reveal">
 <div class="offer-num" style="background:rgba(227,177,96,.14); color:var(--accent-2);">02</div>
 <div>
-<h3>Quantitative Microscopy &amp; Phenotypic Screening</h3>
-<p>Problem: microscopy screens are slowed by illumination artifacts, noisy segmentation, and hard-to-compare drug effects. Impact: built a 3-channel DAPI/Actin/Tubulin workflow, exported per-cell features, and trained U-Net segmentation to Dice ~0.90, IoU ~0.82, precision ~0.91, and recall ~0.90 over 50 epochs.</p>
+<h3>Space Crew Biomechanics &amp; Fracture-Risk Digital Twins</h3>
+<p><strong>Problem:</strong> Astronauts face microgravity-induced bone loss during long-duration exploration missions with limited in-flight diagnostics. <strong>Impact:</strong> Engineered AstroBone Twin—an explainable decision-support twin combining a Level-A Simulink biomechanical control envelope (impact pulse, stress/strain, BMD capacity modifier) and deep learning fracture classification &amp; UNet++ segmentation on FracAtlas.</p>
 </div>
 </div>
 
 <div class="offer-row reveal">
-<div class="offer-num" style="background:rgba(143,176,214,.14); color:var(--accent-3);">03</div>
+<div class="offer-num" style="background:rgba(127,201,174,.14); color:var(--accent);">03</div>
 <div>
-<h3>Reflex-Safe Rehabilitation Robotics</h3>
-<p>Problem: soft robotic hands and exosystems need faster protective behavior before physical testing. Impact: modeled 4 neuromechanical control modes, simulated 20-50 ms reflex-response targets, and reduced reflex gain from 1.00 to ~0.78 after a 0.85 load step to prevent excessive activation.</p>
+<h3>Multimodal Emergency Medicine ML &amp; Deterioration Forecasting</h3>
+<p><strong>Problem:</strong> Emergency departments need reliable, early warning of severe deterioration within the first 90 minutes of arrival. <strong>Impact:</strong> Developed multimodal fusion models (ECG ResNet/Transformers + EHR tabular MLP) predicting 15 clinical targets (ICU admission, mechanical ventilation, vasopressors, mortality) on MIMIC-IV-Ext-MDS-ED, backed by calibration, decision-curve analysis, and SHAP explainability.</p>
 </div>
 </div>
 
 <div class="offer-row reveal">
-<div class="offer-num" style="background:rgba(209,143,120,.14); color:var(--accent-4);">04</div>
+<div class="offer-num" style="background:rgba(167,139,250,.14); color:var(--accent-5);">04</div>
 <div>
-<h3>Drug Delivery Design Validation</h3>
-<p>Problem: nanoparticle carrier selection needs objective evidence, not visual comparison. Impact: compared 3 NP/carrier groups with a 3x3 DOE, ANOVA/Tukey testing at alpha=0.05, and found polymer delivery averaged 9.2 percentage points higher release than Au-based delivery over 6 hours.</p>
+<h3>Autonomous Multi-Agent Neuro-Rehabilitation</h3>
+<p><strong>Problem:</strong> At-home neurological rehab lacks continuous clinician monitoring, adaptive multi-sensory pacing, and hard safety boundaries. <strong>Impact:</strong> Created NeuroBridge SenseAssist, orchestrating a 7-stage agent pipeline (speech perception, cognitive reasoning, sensory planning, safety gate) with PulseSight rPPG facial motor analytics, passing 10/10 reproducible software regression scenarios and 80/80 safety assertions.</p>
 </div>
 </div>
 
 <div class="offer-row reveal">
-<div class="offer-num" style="background:rgba(243,241,234,.08); color:var(--muted);">+</div>
+<div class="offer-num" style="background:rgba(143,176,214,.14); color:var(--accent-3);">05</div>
 <div>
-<h3>Biomedical Signals &amp; Wearable Feedback</h3>
-<p>Problem: raw ECG, motion, and pressure streams are hard to use directly. Impact: convert noisy recordings into R-peaks, RR intervals, SDNN, RMSSD, wavelet maps, motion states, and plantar-pressure signals for monitoring and closed-loop feedback prototypes.</p>
+<h3>Donor-Aware Transcriptomics &amp; Raw-Read Splice Confirmation</h3>
+<p><strong>Problem:</strong> Target discovery in neurodegenerative diseases (SMA) often suffers from batch effects, donor heterogeneity, and unverified processed counts. <strong>Impact:</strong> Conducted a donor-aware integration across GSE93939 and GSE290979, re-quantifying 18 raw FASTQ runs with Salmon v1.10.2 (Spearman rho 0.778 concordance) and confirming candidate resilience genes (LY6H, HS3ST5, ZNF853, IL17D, p=0.044) and STAR-rMATS splice junctions.</p>
+</div>
+</div>
+
+<div class="offer-row reveal">
+<div class="offer-num" style="background:rgba(209,143,120,.14); color:var(--accent-4);">06</div>
+<div>
+<h3>Quantitative Microscopy &amp; Cancer Biomarker Discovery</h3>
+<p><strong>Problem:</strong> High-throughput cell screens and early pancreatic cancer detection require reproducible quantification and validated panels. <strong>Impact:</strong> Built 3-channel phenotypic U-Net segmentation pipelines (Dice ~0.90, IoU ~0.82) and narrowed 628 malignant-switch genes into a 6 EV-miRNA PDAC diagnostic panel (ROC AUC 0.935) and Cas12a CRISPR SNV prioritization atlases.</p>
 </div>
 </div>
 
@@ -561,39 +624,71 @@ decision-ready handoff are part of the deliverable.
 <section id="outcomes">
 <div class="container">
 <div class="eyebrow">Outcome Areas</div>
-<h2 class="section-title">Proof points from recent biomedical AI work.</h2>
+<h2 class="section-title">Proof points from recent biomedical AI &amp; clinical systems work.</h2>
 <div class="skill-groups">
 
 <div class="skill-group reveal">
 <div class="gh">
-<span class="pill" style="background:var(--accent)"></span>
-<div><h4>PDAC biomarker discovery</h4><div class="priority">Early detection problem</div></div>
+<span class="pill" style="background:var(--accent-6)"></span>
+<div><h4>AURA HealthOS Hospital Safety Twin</h4><div class="priority">Hospital ERP &amp; facility safety</div></div>
 </div>
-<div class="skill-tags"><span>5 datasets</span><span>428 samples/regions</span><span>6-miRNA panel</span><span>AUC 0.935</span></div>
+<div class="skill-tags"><span>Three.js 3D campus</span><span>22 connected services</span><span>6-stage closed loop</span><span>P1/P2 escalation</span><span>Cloudflare D1</span></div>
 </div>
 
 <div class="skill-group reveal">
 <div class="gh">
 <span class="pill" style="background:var(--accent-2)"></span>
-<div><h4>Microscopy drug profiling</h4><div class="priority">Phenotypic screening problem</div></div>
+<div><h4>AstroBone Space Fracture-Risk Twin</h4><div class="priority">Spaceflight biomechanics problem</div></div>
 </div>
-<div class="skill-tags"><span>3 channels</span><span>per-cell CSV features</span><span>Dice ~0.90</span><span>IoU ~0.82</span></div>
+<div class="skill-tags"><span>Level-A Simulink envelope</span><span>DenseNet-121</span><span>UNet++ FracAtlas</span><span>BMD capacity modifier</span><span>Three.js viewer</span></div>
+</div>
+
+<div class="skill-group reveal">
+<div class="gh">
+<span class="pill" style="background:var(--accent-6)"></span>
+<div><h4>Multimodal ED Deterioration ML</h4><div class="priority">Emergency department clinical risk</div></div>
+</div>
+<div class="skill-tags"><span>15 clinical targets</span><span>12-lead ECG + EHR</span><span>MIMIC-IV-Ext-MDS-ED</span><span>Gated ResNet &amp; Transformers</span><span>Decision curves</span></div>
+</div>
+
+<div class="skill-group reveal">
+<div class="gh">
+<span class="pill" style="background:var(--accent-5)"></span>
+<div><h4>NeuroBridge SenseAssist Multi-Agent Rehab</h4><div class="priority">Neuro-rehabilitation orchestration</div></div>
+</div>
+<div class="skill-tags"><span>7-stage agent pipeline</span><span>PulseSight rPPG</span><span>10/10 scenarios passed</span><span>80/80 safety assertions</span><span>FHIR export</span></div>
 </div>
 
 <div class="skill-group reveal">
 <div class="gh">
 <span class="pill" style="background:var(--accent-3)"></span>
-<div><h4>Neuromechanical reflex modeling</h4><div class="priority">Robotic safety problem</div></div>
+<div><h4>SMN2 Motor-Neuron Resilience in SMA</h4><div class="priority">Donor-aware transcriptomics</div></div>
 </div>
-<div class="skill-tags"><span>4 reflex modes</span><span>20-50 ms target</span><span>0.85 load step</span><span>gain 1.00 to ~0.78</span></div>
+<div class="skill-tags"><span>37 candidates</span><span>18 raw FASTQs</span><span>Salmon 1.10.2 (rho 0.778)</span><span>STAR-rMATS splice</span><span>p=0.044 overlap</span></div>
+</div>
+
+<div class="skill-group reveal">
+<div class="gh">
+<span class="pill" style="background:var(--accent)"></span>
+<div><h4>PDAC Biomarker Discovery</h4><div class="priority">Early oncology detection problem</div></div>
+</div>
+<div class="skill-tags"><span>5 datasets</span><span>428 samples/regions</span><span>6-miRNA panel</span><span>ROC AUC 0.935</span><span>10-fold CV 0.919</span></div>
 </div>
 
 <div class="skill-group reveal">
 <div class="gh">
 <span class="pill" style="background:var(--accent-4)"></span>
-<div><h4>Nanoparticle delivery validation</h4><div class="priority">Experimental design problem</div></div>
+<div><h4>Microscopy Drug Profiling</h4><div class="priority">High-content phenotypic screening</div></div>
 </div>
-<div class="skill-tags"><span>3 NP groups</span><span>3x3 DOE</span><span>alpha=0.05</span><span>+9.2 pp release</span></div>
+<div class="skill-tags"><span>3 channels</span><span>per-cell CSV features</span><span>Dice ~0.90</span><span>IoU ~0.82</span><span>Precision 0.91</span></div>
+</div>
+
+<div class="skill-group reveal">
+<div class="gh">
+<span class="pill" style="background:var(--accent)"></span>
+<div><h4>Cas12aDetect-R Cancer SNV Guide Prioritization</h4><div class="priority">Computational CRISPR diagnostics</div></div>
+</div>
+<div class="skill-tags"><span>Pan-cancer SNVs</span><span>Cas12a crRNA scoring</span><span>GRCh38 coordinates</span><span>Mismatch penalty</span><span>R 4.6 framework</span></div>
 </div>
 
 </div>
@@ -603,12 +698,14 @@ decision-ready handoff are part of the deliverable.
 <section id="stats">
 <div class="container">
 <div class="eyebrow">Research Impact</div>
-<h2 class="section-title">Quantified research outcomes.</h2>
-<div class="vitals-strip reveal">
-<div class="vital"><div class="num">5</div><div class="lab">Datasets integrated for PDAC analysis</div></div>
-<div class="vital"><div class="num">628</div><div class="lab">Malignant-switch genes triaged</div></div>
-<div class="vital"><div class="num">6</div><div class="lab">EV-miRNA biomarkers in final panel</div></div>
-<div class="vital"><div class="num">0.935</div><div class="lab">ROC AUC on biomarker model</div></div>
+<h2 class="section-title">Quantified outcomes across systems, models, and data.</h2>
+<div class="vitals-strip reveal" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));">
+<div class="vital"><div class="num" style="color:var(--accent-6);">22</div><div class="lab">Connected Hospital Services in AURA Safety Twin</div></div>
+<div class="vital"><div class="num" style="color:var(--accent-6);">15</div><div class="lab">ED Deterioration Targets (ECG + Tabular EHR)</div></div>
+<div class="vital"><div class="num" style="color:var(--accent-5);">10/10</div><div class="lab">Regression Scenarios Passed (80/80 Assertions)</div></div>
+<div class="vital"><div class="num" style="color:var(--accent-3);">37</div><div class="lab">SMA Resilience Candidate Genes Confirmed</div></div>
+<div class="vital"><div class="num" style="color:var(--accent);">0.935</div><div class="lab">ROC AUC on PDAC EV-miRNA Biomarker Panel</div></div>
+<div class="vital"><div class="num" style="color:var(--accent-4);">~0.90</div><div class="lab">U-Net Segmentation Dice Score on Microscopy</div></div>
 </div>
 </div>
 </section>
@@ -616,56 +713,172 @@ decision-ready handoff are part of the deliverable.
 <section id="projects">
 <div class="container">
 <div class="eyebrow">Featured Projects</div>
-<h2 class="section-title">Selected work framed by problem and impact.</h2>
+<h2 class="section-title">Selected work framed by problem, architecture, and quantified impact.</h2>
+
+<div class="filter-tabs">
+<button class="filter-btn active" onclick="filterProjects('all', this)">All Projects</button>
+<button class="filter-btn" onclick="filterProjects('pinned', this)">⭐ Pinned on GitHub</button>
+<button class="filter-btn" onclick="filterProjects('twin', this)">Digital Twins &amp; Systems</button>
+<button class="filter-btn" onclick="filterProjects('clinical-ai', this)">Healthcare AI &amp; ML</button>
+<button class="filter-btn" onclick="filterProjects('bioinfo', this)">Bioinformatics &amp; Genomics</button>
+<button class="filter-btn" onclick="filterProjects('signals', this)">Biosignals &amp; Imaging</button>
+</div>
+
 <div class="project-grid">
 
-<div class="pcard reveal" onclick="openModal('p3')">
-<div class="tagrow"><span class="ptag c-bio">BIOINFORMATICS</span></div>
+<!-- 1. AURA HealthOS (Pinned) -->
+<div class="pcard reveal" data-category="pinned twin clinical-ai" onclick="openModal('p-aura')">
+<div class="tagrow">
+<span class="ptag c-pinned">⭐ PINNED</span>
+<span class="ptag c-twin">DIGITAL TWIN</span>
+<span class="ptag c-ai">HOSPITAL ERP</span>
+</div>
+<h3>AURA HealthOS</h3>
+<p><strong>AI-Integrated Hospital ERP &amp; Facility Safety Twin:</strong> Interactive Three.js 3D campus connecting 22 clinical &amp; utility services with 6-stage closed loops (detect &rarr; contain &rarr; restore) and Cloudflare D1 persistence.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://mysunatislam.github.io/aura-healthos-hospital-erp/" target="_blank" class="pcard-link primary">&#x25B6; Live Demo</a>
+<a href="https://github.com/mysunatislam/aura-healthos-hospital-erp" target="_blank" class="pcard-link">&#x2197; GitHub</a>
+<a href="https://www.youtube.com/watch?v=nq7J2xSkupI" target="_blank" class="pcard-link">&#x1F3AC; Video</a>
+</div>
+<span class="view">View architecture &amp; details</span>
+</div>
+
+<!-- 2. AstroBone Twin (Pinned) -->
+<div class="pcard reveal" data-category="pinned twin clinical-ai" onclick="openModal('p-astrobone')">
+<div class="tagrow">
+<span class="ptag c-pinned">⭐ PINNED</span>
+<span class="ptag c-twin">SPACE DIGITAL TWIN</span>
+<span class="ptag c-ai">BIOMECHANICS</span>
+</div>
+<h3>AstroBone Twin</h3>
+<p><strong>Space Crew Fracture-Risk Decision Support:</strong> Explainable twin coupling a Level-A Simulink control envelope (impact pulse, stress/strain, BMD capacity modifier) with FracAtlas DenseNet-121 classifier and UNet++ segmentation.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://mysunatislam.github.io/astrobone-twin/" target="_blank" class="pcard-link primary">&#x25B6; Live Demo</a>
+<a href="https://github.com/mysunatislam/astrobone-twin" target="_blank" class="pcard-link">&#x2197; GitHub</a>
+</div>
+<span class="view">View simulation evidence</span>
+</div>
+
+<!-- 3. Multimodal ED Deterioration Intelligence (Pinned) -->
+<div class="pcard reveal" data-category="pinned clinical-ai signals" onclick="openModal('p-mdsed')">
+<div class="tagrow">
+<span class="ptag c-pinned">⭐ PINNED</span>
+<span class="ptag c-ai">MULTIMODAL ML</span>
+<span class="ptag c-sig">12-LEAD ECG + EHR</span>
+</div>
+<h3>Multimodal ED Deterioration</h3>
+<p><strong>Validated Emergency Medicine ML Dashboard:</strong> Predicts 15 acute deterioration targets within 90 min of ED arrival using Gated ResNet &amp; Transformer fusion on MIMIC-IV-Ext-MDS-ED with calibration &amp; decision curves.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://mysunatislam.github.io/multimodal-ed-deterioration-intelligence/" target="_blank" class="pcard-link primary">&#x25B6; Live Demo</a>
+<a href="https://github.com/mysunatislam/multimodal-ed-deterioration-intelligence" target="_blank" class="pcard-link">&#x2197; GitHub</a>
+</div>
+<span class="view">View model &amp; metrics</span>
+</div>
+
+<!-- 4. NeuroBridge SenseAssist (Pinned) -->
+<div class="pcard reveal" data-category="pinned clinical-ai twin" onclick="openModal('p-neurobridge')">
+<div class="tagrow">
+<span class="ptag c-pinned">⭐ PINNED</span>
+<span class="ptag c-agent">MULTI-AGENT AI</span>
+<span class="ptag c-sig">NEURO-REHAB</span>
+</div>
+<h3>NeuroBridge SenseAssist</h3>
+<p><strong>Autonomous Multi-Agent Neuro-Rehab:</strong> Coordinates a 7-stage agent pipeline with PulseSight rPPG facial motor analytics, adaptive sensory cues, and independent actuation safety gate; passed 10/10 regression scenarios and 80/80 assertions.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://neurobridge-senseassist.vercel.app" target="_blank" class="pcard-link primary">&#x25B6; Live Demo</a>
+<a href="https://github.com/mysunatislam/neurobridge-senseassist" target="_blank" class="pcard-link">&#x2197; GitHub</a>
+</div>
+<span class="view">View agent trace &amp; benchmarks</span>
+</div>
+
+<!-- 5. SMN2 Resilience Raw Confirmation (Pinned) -->
+<div class="pcard reveal" data-category="pinned bioinfo" onclick="openModal('p-smn2')">
+<div class="tagrow">
+<span class="ptag c-pinned">⭐ PINNED</span>
+<span class="ptag c-bio">TRANSCRIPTOMICS</span>
+<span class="ptag c-bio">SMA GENOMICS</span>
+</div>
+<h3>SMN2 Motor-Neuron Resilience</h3>
+<p><strong>Donor-Aware Cross-Model Resilience Analysis:</strong> Integrated GSE93939 &amp; GSE290979 in human SMA, re-quantified 18 raw FASTQs via Salmon 1.10.2 (Spearman rho 0.778 concordance), and confirmed 4 robust candidates (p=0.044) &amp; STAR-rMATS splice events.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://github.com/mysunatislam/smn2-resilience-raw-confirmation" target="_blank" class="pcard-link primary">&#x2197; GitHub Repository</a>
+</div>
+<span class="view">View statistical confirmation</span>
+</div>
+
+<!-- 6. PDAC Biomarker Discovery -->
+<div class="pcard reveal" data-category="bioinfo" onclick="openModal('p3')">
+<div class="tagrow"><span class="ptag c-bio">BIOINFORMATICS</span><span class="ptag c-bio">ONCOLOGY</span></div>
 <h3>PDAC Biomarker Discovery</h3>
-<p><strong>Impact:</strong> narrowed 628 malignant-switch genes to a 6 EV-miRNA panel with ROC AUC 0.935.</p>
-<span class="view">View details</span>
+<p><strong>Spatially Validated Early Detection Panel:</strong> Integrated 5 datasets across 428 samples/regions, triaged 628 malignant-switch genes to 80 spatially validated genes, yielding a 6 EV-miRNA biomarker panel with ROC AUC 0.935.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://github.com/mysunatislam/pdac-integrated-biomarker-analysis" target="_blank" class="pcard-link">&#x2197; GitHub</a>
+<a href="https://drive.google.com/file/d/1FgYi9u0JsDnnzEioZyqPxjtLJUvPYgOt/view" target="_blank" class="pcard-link">&#x1F4C4; Write-Up</a>
+</div>
+<span class="view">View biomarker validation</span>
 </div>
 
-<div class="pcard reveal" onclick="openModal('p5')">
-<div class="tagrow"><span class="ptag c-sig">SIGNAL PROCESSING</span></div>
-<h3>ECG Analytics</h3>
-<p><strong>Impact:</strong> converts raw ECG into R-peaks, RR intervals, SDNN, RMSSD, and wavelet features for physiological-state comparison.</p>
-<span class="view">View details</span>
+<!-- 7. Cas12aDetect-R -->
+<div class="pcard reveal" data-category="bioinfo" onclick="openModal('p-crispr')">
+<div class="tagrow"><span class="ptag c-bio">CRISPR-Cas12a</span><span class="ptag c-bio">CANCER SNVs</span></div>
+<h3>Cas12aDetect-R Guide Prioritization</h3>
+<p><strong>Computational CRISPR Detection Framework:</strong> Interpretable R workflow prioritizing Cas12a crRNAs for mutation-specific detection of actionable cancer SNVs using discrimination scoring, structural stability, and off-target modeling.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://github.com/mysunatislam/R-crispr" target="_blank" class="pcard-link primary">&#x2197; GitHub Repository</a>
+</div>
+<span class="view">View pipeline architecture</span>
 </div>
 
-<div class="pcard reveal" onclick="openModal('p1')">
-<div class="tagrow"><span class="ptag c-twin">DIGITAL TWIN</span></div>
-<h3>NeuroMap BD</h3>
-<p><strong>Impact:</strong> turns stroke-rehab intent and sensor signals into a testable digital-twin workflow before hardware iteration.</p>
-<span class="view">View details</span>
+<!-- 8. NeuroRoboTwin -->
+<div class="pcard reveal" data-category="twin" onclick="openModal('p6')">
+<div class="tagrow"><span class="ptag c-twin">DIGITAL TWIN</span><span class="ptag c-twin">ROBOTICS</span></div>
+<h3>NeuroRoboTwin Reflex Modeling</h3>
+<p><strong>Biomimetic Protective Hand Actuation:</strong> Simulated 4 reflex-control modes for soft robotic hands with 20-50 ms biological latency windows, suppressing high-load gain from 1.00 to ~0.78 for disturbance safety.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://drive.google.com/file/d/1WxuuvTaSyuiirQxHsHLMrjP-h9e2Jbeq/view" target="_blank" class="pcard-link">&#x1F4C4; Technical Details</a>
+</div>
+<span class="view">View simulation specs</span>
 </div>
 
-<div class="pcard reveal" onclick="openModal('p6')">
-<div class="tagrow"><span class="ptag c-twin">DIGITAL TWIN</span></div>
-<h3>NeuroRoboTwin</h3>
-<p><strong>Impact:</strong> modeled 4 reflex-control modes and reduced high-load gain from 1.00 to ~0.78 for safer actuator behavior.</p>
-<span class="view">View details</span>
+<!-- 9. Microscopy Image AI -->
+<div class="pcard reveal" data-category="signals clinical-ai" onclick="openModal('p4')">
+<div class="tagrow"><span class="ptag c-img">IMAGING</span><span class="ptag c-ai">U-NET DEEP LEARNING</span></div>
+<h3>Microscopy Phenotypic AI</h3>
+<p><strong>Multi-Stage Screening Normalization &amp; Segmentation:</strong> 3-channel (DAPI/Actin/Tubulin) drug screen workflow with 5 normalization modes, per-cell feature extraction, and U-Net Dice ~0.90 / IoU ~0.82.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://drive.google.com/file/d/1Ihcm8LKew4Q7tcuwgEHq5gCv87W78CU3/view" target="_blank" class="pcard-link">&#x1F4C4; Research Write-up</a>
+</div>
+<span class="view">View segmentation metrics</span>
 </div>
 
-<div class="pcard reveal" onclick="openModal('p2')">
-<div class="tagrow"><span class="ptag c-twin">DIGITAL TWIN</span></div>
-<h3>Gait Monitoring System</h3>
-<p><strong>Impact:</strong> combines motion, plantar pressure, pneumatic support, and vibration feedback into one closed-loop rehab prototype.</p>
-<span class="view">View details</span>
+<!-- 10. ECG Analytics -->
+<div class="pcard reveal" data-category="signals" onclick="openModal('p5')">
+<div class="tagrow"><span class="ptag c-sig">SIGNAL PROCESSING</span><span class="ptag c-sig">ECG WAVELETS</span></div>
+<h3>ECG Biosignal Analytics</h3>
+<p><strong>Physiological State Feature Extraction:</strong> Transforms raw ECG signals into R-peaks, RR intervals, HRV, SDNN/RMSSD, and continuous wavelet scalograms for mental state differentiation.</p>
+<span class="view">View signal pipeline</span>
 </div>
 
-<div class="pcard reveal" onclick="openModal('p4')">
-<div class="tagrow"><span class="ptag c-img">IMAGING</span></div>
-<h3>Microscopy Image AI</h3>
-<p><strong>Impact:</strong> 3-channel phenotypic pipeline with U-Net Dice ~0.90, IoU ~0.82, precision ~0.91, recall ~0.90.</p>
-<span class="view">View details</span>
+<!-- 11. Gait Monitoring System -->
+<div class="pcard reveal" data-category="twin signals" onclick="openModal('p2')">
+<div class="tagrow"><span class="ptag c-twin">DIGITAL TWIN</span><span class="ptag c-sig">WEARABLE SENSORS</span></div>
+<h3>Closed-Loop Gait Monitoring</h3>
+<p><strong>Pneumatic Trunk Support &amp; Vibration Feedback:</strong> Integrates motion, plantar pressure, pneumatic support, and vibration into a unified closed-loop rehabilitation digital twin prototype.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://drive.google.com/file/d/1hokDQjFJi8W9caYjHQ2iXqI1Bl9RAhCn/view?usp=sharing" target="_blank" class="pcard-link">&#x1F4C4; System Digital Twin</a>
+</div>
+<span class="view">View hardware-in-the-loop</span>
 </div>
 
-<div class="pcard reveal" onclick="openModal('p7')">
-<div class="tagrow"><span class="ptag c-sig">STATISTICS</span></div>
-<h3>Drug Delivery Optimization</h3>
-<p><strong>Impact:</strong> 3x3 DOE and ANOVA/Tukey validation showed polymer delivery averaged +9.2 percentage points over Au-based delivery.</p>
-<span class="view">View details</span>
+<!-- 12. Drug Delivery Optimization -->
+<div class="pcard reveal" data-category="bioinfo signals" onclick="openModal('p7')">
+<div class="tagrow"><span class="ptag c-sig">STATISTICS</span><span class="ptag c-bio">DRUG DELIVERY</span></div>
+<h3>Nanoparticle Delivery Optimization</h3>
+<p><strong>Statistically Defensible Carrier Comparison:</strong> Evaluated 3 NP/carrier groups via 3x3 full-factorial DOE and ANOVA/Tukey post-hoc analysis; confirmed polymer delivery averaged +9.2 pp higher release.</p>
+<div class="pcard-links" onclick="event.stopPropagation()">
+<a href="https://docs.google.com/presentation/d/1T_4kHizGpRvWeNZUgLs9bqjJBgMPetxC/edit?usp=sharing" target="_blank" class="pcard-link">&#x1F4CA; Presentation Deck</a>
+</div>
+<span class="view">View statistical validation</span>
 </div>
 
 </div>
@@ -674,9 +887,42 @@ decision-ready handoff are part of the deliverable.
 
 <section id="research">
 <div class="container">
-<div class="eyebrow">Evidence</div>
-<h2 class="section-title">Research artifacts behind the impact claims.</h2>
+<div class="eyebrow">Evidence &amp; Repositories</div>
+<h2 class="section-title">Peer-review artifacts, verified repositories, and live demonstrations.</h2>
 <div class="research-list">
+
+<div class="research-item reveal">
+<span class="rtag" style="background:rgba(56,189,248,.14); color:var(--accent-6);">HOSPITAL TWIN</span>
+<div><h3>AURA HealthOS Live Deployment &amp; Video Walkthrough</h3><p>Interactive Three.js 3D campus, 22 connected services, 6-stage closed-loop containment, and comprehensive video demonstration.</p></div>
+<div style="display:flex; gap:8px; flex-wrap:wrap;">
+<a href="https://mysunatislam.github.io/aura-healthos-hospital-erp/" target="_blank">Live 3D App</a>
+<a href="https://www.youtube.com/watch?v=nq7J2xSkupI" target="_blank">YouTube Video</a>
+</div>
+</div>
+
+<div class="research-item reveal">
+<span class="rtag" style="background:rgba(143,176,214,.14); color:var(--accent-3);">SMA TRANSCRIPTOMICS</span>
+<div><h3>Cross-Model Motor-Neuron Resilience &amp; Raw FASTQ Confirmation</h3><p>Donor-aware integration of GSE93939 &amp; GSE290979, Salmon 1.10.2 raw-read confirmation (rho 0.778), and STAR-rMATS splice validation package.</p></div>
+<a href="https://github.com/mysunatislam/smn2-resilience-raw-confirmation" target="_blank">View Repo &amp; Manuscript</a>
+</div>
+
+<div class="research-item reveal">
+<span class="rtag" style="background:rgba(56,189,248,.14); color:var(--accent-6);">EMERGENCY MEDICINE ML</span>
+<div><h3>Multimodal ED Deterioration Intelligence (MDS-ED Benchmark)</h3><p>15 clinical deterioration targets evaluated with AUROC, AUPRC, Brier score, ECE, decision curves, and live GitHub Pages command center.</p></div>
+<a href="https://mysunatislam.github.io/multimodal-ed-deterioration-intelligence/" target="_blank">Live Dashboard</a>
+</div>
+
+<div class="research-item reveal">
+<span class="rtag" style="background:rgba(227,177,96,.14); color:var(--accent-2);">SPACE BIOMECHANICS</span>
+<div><h3>AstroBone Twin Space Crew Biomechanical Evidence</h3><p>Simulink Level-A biomechanical control envelope, FracAtlas DenseNet-121 classifier &amp; UNet++ segmentation artifact package.</p></div>
+<a href="https://mysunatislam.github.io/astrobone-twin/" target="_blank">Live Digital Twin</a>
+</div>
+
+<div class="research-item reveal">
+<span class="rtag" style="background:rgba(167,139,250,.14); color:var(--accent-5);">MULTI-AGENT REHAB</span>
+<div><h3>NeuroBridge SenseAssist 10-Scenario Software Evidence</h3><p>Autonomous multi-agent speech/facial rehabilitation platform passing 10/10 regression scenarios and 80/80 safety assertions.</p></div>
+<a href="https://neurobridge-senseassist.vercel.app" target="_blank">Live Application</a>
+</div>
 
 <div class="research-item reveal">
 <span class="rtag" style="background:rgba(127,201,174,.14); color:var(--accent);">BIOINFORMATICS</span>
@@ -685,14 +931,20 @@ decision-ready handoff are part of the deliverable.
 </div>
 
 <div class="research-item reveal">
+<span class="rtag" style="background:rgba(127,201,174,.14); color:var(--accent);">CRISPR-Cas12a</span>
+<div><h3>Cas12aDetect-R Actionable Cancer SNV Prioritization Atlas</h3><p>Pan-cancer actionable SNV curation, mutation-discrimination scoring, and reproducible R 4.6 analysis workflow.</p></div>
+<a href="https://github.com/mysunatislam/R-crispr" target="_blank">View Repository</a>
+</div>
+
+<div class="research-item reveal">
 <span class="rtag" style="background:rgba(143,176,214,.14); color:var(--accent-3);">DIGITAL TWIN</span>
-<div><h3>NeuroRoboTwin</h3><p>4 reflex modes, 20-50 ms biological latency target, load-dependent gain suppression from 1.00 to ~0.78.</p></div>
+<div><h3>NeuroRoboTwin Neuromechanical Reflex Modeling</h3><p>4 reflex modes, 20-50 ms biological latency target, load-dependent gain suppression from 1.00 to ~0.78.</p></div>
 <a href="https://drive.google.com/file/d/1WxuuvTaSyuiirQxHsHLMrjP-h9e2Jbeq/view" target="_blank">View details</a>
 </div>
 
 <div class="research-item reveal">
 <span class="rtag" style="background:rgba(209,143,120,.14); color:var(--accent-4);">IMAGING</span>
-<div><h3>Drug-Induced Phenotypic Analysis</h3><p>3-channel microscopy workflow, per-cell quantitative features, U-Net Dice ~0.90 and IoU ~0.82.</p></div>
+<div><h3>Drug-Induced Phenotypic Analysis in Microscopy</h3><p>3-channel microscopy workflow, per-cell quantitative features, U-Net Dice ~0.90 and IoU ~0.82.</p></div>
 <a href="https://drive.google.com/file/d/1Ihcm8LKew4Q7tcuwgEHq5gCv87W78CU3/view" target="_blank">Read write-up</a>
 </div>
 
@@ -774,6 +1026,126 @@ decision-ready handoff are part of the deliverable.
 </footer>
 
 <!-- Project Modals -->
+
+<!-- Modal: AURA HealthOS -->
+<div id="p-aura" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('p-aura')">&times;</span>
+<h2>AURA HealthOS - AI Hospital ERP &amp; Facility Safety Twin</h2>
+<p><strong>Problem:</strong> Hospital operations and life-critical utilities (medical oxygen, MRI Zone IV, radiotherapy bunkers, isolation negative pressure, dialysis RO water) operate in disconnected silos without closed-loop safety automation.</p>
+<h3>What I built</h3>
+<p>A comprehensive hospital operations and facility safety platform featuring an interactive Three.js 3D campus connecting 22 clinical and utility services. Built with a 6-stage closed loop: <strong>detect &rarr; contain &rarr; acknowledge &rarr; correct &rarr; verify &rarr; restore</strong>.</p>
+<h3>Quantified impact &amp; engineering</h3>
+<ul>
+<li><strong>22 Connected Services:</strong> Cardiology, stroke, radiology, MRI, pathology, operating theatres, adult/neonatal ICU, dialysis, medical oxygen plant, power, HVAC, and fire systems.</li>
+<li><strong>Incident Escalation Engine:</strong> Concurrent P1/P2 prioritization with affected-service propagation (e.g., oxygen pressure drop, MRI magnetic quench, radiotherapy dose deviation).</li>
+<li><strong>Safety Boundaries:</strong> Strict separation between bounded automated containment and qualified human clinician overrides.</li>
+<li><strong>Technology:</strong> React 19, TypeScript, Three.js, Vinext, Vite, Cloudflare D1, Drizzle ORM, Lucide icons.</li>
+</ul>
+<a class="link-btn" href="https://mysunatislam.github.io/aura-healthos-hospital-erp/" target="_blank">&#x25B6; Live 3D Campus Demo</a>
+<a class="link-btn" href="https://github.com/mysunatislam/aura-healthos-hospital-erp" target="_blank">&#x2197; GitHub Repository</a>
+<a class="link-btn" href="https://www.youtube.com/watch?v=nq7J2xSkupI" target="_blank">&#x1F3AC; YouTube Video Walkthrough</a>
+</div>
+</div>
+
+<!-- Modal: AstroBone Twin -->
+<div id="p-astrobone" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('p-astrobone')">&times;</span>
+<h2>AstroBone Twin - Space Crew Fracture-Risk Digital Twin</h2>
+<p><strong>Problem:</strong> Long-duration spaceflight induces significant bone mineral density (BMD) loss. Space crews on lunar/Martian extravehicular activities (EVAs) lack explainable, real-time fracture risk decision support.</p>
+<h3>What I built</h3>
+<p>An explainable fracture-risk digital twin coupling a Level-A Simulink biomechanical control envelope with a deep learning vision pipeline and an interactive Three.js clinical decision-support interface.</p>
+<h3>Quantified impact &amp; evidence</h3>
+<ul>
+<li><strong>Biomechanical Simulink Envelope:</strong> Models dynamic impact pulses, contact stress/strain, bone capacity modifiers, and uncertainty intervals.</li>
+<li><strong>Deterministic Verification:</strong> The client independently recalculates baselines and strictly rejects cases where stress, capacity, or Demand-Capacity Ratio (DCR) diverge from the validated envelope.</li>
+<li><strong>Deep Learning Track:</strong> DenseNet-121 classifier and UNet++ DenseNet-121 segmentation models trained on the FracAtlas dataset.</li>
+<li><strong>Technology:</strong> JavaScript, Three.js, MATLAB/Simulink, Python, PyTorch, DenseNet-121.</li>
+</ul>
+<a class="link-btn" href="https://mysunatislam.github.io/astrobone-twin/" target="_blank">&#x25B6; Live Digital Twin Demo</a>
+<a class="link-btn" href="https://github.com/mysunatislam/astrobone-twin" target="_blank">&#x2197; GitHub Repository</a>
+</div>
+</div>
+
+<!-- Modal: Multimodal ED Deterioration Intelligence -->
+<div id="p-mdsed" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('p-mdsed')">&times;</span>
+<h2>Multimodal ED Deterioration Intelligence</h2>
+<p><strong>Problem:</strong> Emergency departments face severe triage bottlenecks and need early, calibrated detection of acute patient deterioration within 90 minutes of presentation.</p>
+<h3>What I built</h3>
+<p>A multimodal deep learning and clinical decision-support pipeline combining 12-lead ECG waveforms and tabular EHR features on the benchmark dataset MIMIC-IV-Ext-MDS-ED.</p>
+<h3>Quantified impact &amp; clinical validation</h3>
+<ul>
+<li><strong>15 Clinical Deterioration Targets:</strong> Hypoxemia, ECMO, vasopressors, inotropes, mechanical ventilation, cardiac arrest, ICU admission within 24h, and 1-365 day mortality.</li>
+<li><strong>Architectures:</strong> Gated Multimodal ResNet (ECG encoder + tabular MLP) and Modality-Attention Tabular/ECG Patch Transformers.</li>
+<li><strong>Rigorous Clinical Validation:</strong> Evaluated with AUROC, AUPRC, Brier score, Expected Calibration Error (ECE), bootstrap confidence intervals, and net-benefit Decision Curve Analysis (DCA).</li>
+<li><strong>Deployment:</strong> Static GitHub Pages command center + local Python Streamlit interface.</li>
+</ul>
+<a class="link-btn" href="https://mysunatislam.github.io/multimodal-ed-deterioration-intelligence/" target="_blank">&#x25B6; Live ML Dashboard</a>
+<a class="link-btn" href="https://github.com/mysunatislam/multimodal-ed-deterioration-intelligence" target="_blank">&#x2197; GitHub Repository</a>
+</div>
+</div>
+
+<!-- Modal: NeuroBridge SenseAssist -->
+<div id="p-neurobridge" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('p-neurobridge')">&times;</span>
+<h2>NeuroBridge SenseAssist - Autonomous Neuro-Rehabilitation</h2>
+<p><strong>Problem:</strong> Neurological speech and motor rehabilitation requires adaptive, multi-sensory cueing, continuous monitoring, and hard safety boundaries outside hospital settings.</p>
+<h3>What I built</h3>
+<p>An autonomous neuro-rehabilitation platform combining a 7-stage multi-agent orchestration pipeline with PulseSight camera rPPG facial motor analytics, adaptive sensory cues, and an independent actuation safety gate.</p>
+<h3>Quantified impact &amp; software evidence</h3>
+<ul>
+<li><strong>7-Stage Multi-Agent Pipeline:</strong> Speech Perception &rarr; Cognitive Reasoning &rarr; Sensory-Motor Planning &rarr; Experiment Selection &rarr; Digital Twin Update &rarr; Safety Boundary &rarr; Progress Projection.</li>
+<li><strong>Reproducible Software Evidence:</strong> 10 / 10 software regression scenarios passed; 80 / 80 assertions passed; 10 / 10 safety dispositions matched.</li>
+<li><strong>Safety Boundaries:</strong> Automatic mandatory-rest blocking and session-bound clinician approval enforcement.</li>
+<li><strong>EHR Export:</strong> Generates experimental FHIR R4-shaped clinical summary bundles.</li>
+<li><strong>Technology:</strong> TypeScript, React, Vite, Web Audio API, Gemini API, Cloud Firestore metadata.</li>
+</ul>
+<a class="link-btn" href="https://neurobridge-senseassist.vercel.app" target="_blank">&#x25B6; Live Application Demo</a>
+<a class="link-btn" href="https://github.com/mysunatislam/neurobridge-senseassist" target="_blank">&#x2197; GitHub Repository</a>
+</div>
+</div>
+
+<!-- Modal: SMN2 Resilience Raw Confirmation -->
+<div id="p-smn2" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('p-smn2')">&times;</span>
+<h2>SMN2 Cross-Model Motor-Neuron Resilience in SMA</h2>
+<p><strong>Problem:</strong> Identifying biological resilience genes in Spinal Muscular Atrophy requires rigorous control for donor heterogeneity, platform differences, and raw-read transcriptomic confirmation.</p>
+<h3>What I built</h3>
+<p>A reviewer-facing, donor-aware transcriptomic integration linking natural resistance, human SMA disease, and SMN-directed response across GSE93939 and GSE290979, confirmed with raw FASTQ re-quantification.</p>
+<h3>Quantified impact &amp; statistical evidence</h3>
+<ul>
+<li><strong>Raw-Read Confirmation:</strong> Re-quantified 18 deposited FASTQ files across 9 libraries with Salmon 1.10.2 against GENCODE v47; achieved Spearman rho 0.778 concordance (0.807 direction agreement across 14,636 genes).</li>
+<li><strong>Candidate Genes:</strong> Confirmed 4 robust raw/processed overlap candidates: <code>LY6H</code>, <code>HS3ST5</code>, <code>ZNF853</code>, <code>IL17D</code> (10,000-permutation empirical p = 0.044).</li>
+<li><strong>Splice Validation:</strong> Targeted STAR-rMATS confirmation at frozen candidate splice junctions.</li>
+<li><strong>Regression Tests:</strong> Passed 11 regression tests and 66 full-project output checks in R 4.6.0.</li>
+</ul>
+<a class="link-btn" href="https://github.com/mysunatislam/smn2-resilience-raw-confirmation" target="_blank">&#x2197; GitHub Repository &amp; Manuscript</a>
+</div>
+</div>
+
+<!-- Modal: Cas12aDetect-R -->
+<div id="p-crispr" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('p-crispr')">&times;</span>
+<h2>Cas12aDetect-R - CRISPR SNV Guide Prioritization</h2>
+<p><strong>Problem:</strong> Designing CRISPR-Cas12a crRNAs for mutation-specific diagnostic detection of cancer single-nucleotide variants (SNVs) requires balancing mutant recognition, wild-type discrimination, and minimal off-target cleavage.</p>
+<h3>What I built</h3>
+<p>A fully computational, journal-oriented R framework to evaluate, score, and prioritize Cas12a crRNAs around actionable oncogenic mutations.</p>
+<h3>Quantified impact &amp; pipeline design</h3>
+<ul>
+<li><strong>Multi-Dimensional Scoring:</strong> Evaluates mutation discrimination penalties, PAM positioning, crRNA secondary structure, and sequence features.</li>
+<li><strong>Genomic Verification:</strong> Curated pan-cancer actionable SNV atlas with verified GRCh38 genomic coordinates and clinical relevance.</li>
+<li><strong>Reproducible Analysis:</strong> Structured R 4.6 pipeline with regression tests and scoring benchmarks against published mismatch datasets.</li>
+</ul>
+<a class="link-btn" href="https://github.com/mysunatislam/R-crispr" target="_blank">&#x2197; GitHub Repository</a>
+</div>
+</div>
+
 <div id="p1" class="modal">
 <div class="modal-content">
 <span class="close" onclick="closeModal('p1')">&times;</span>
@@ -825,6 +1197,7 @@ decision-ready handoff are part of the deliverable.
 </ul>
 <h3>Evidence</h3>
 <p>Identification of Spatially Validated Malignant-Switch Biomarkers for Early Detection of Pancreatic Ductal Adenocarcinoma</p>
+<a class="link-btn" href="https://github.com/mysunatislam/pdac-integrated-biomarker-analysis" target="_blank">&#x2197; GitHub Repository</a>
 <a class="link-btn" href="https://drive.google.com/file/d/1FgYi9u0JsDnnzEioZyqPxjtLJUvPYgOt/view?usp=sharing" target="_blank">View Details</a>
 </div>
 </div>
@@ -1370,8 +1743,32 @@ decision-ready handoff are part of the deliverable.
   requestAnimationFrame(frame);
 })();
 
-function openModal(id){document.getElementById(id).style.display='block'; document.body.style.overflow='hidden';}
-function closeModal(id){document.getElementById(id).style.display='none'; document.body.style.overflow='';}
+function filterProjects(category, btn){
+  document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+  if(btn) btn.classList.add('active');
+  var cards = document.querySelectorAll('.project-grid .pcard');
+  cards.forEach(function(c){
+    if(category==='all'){
+      c.style.display='flex';
+    } else {
+      var cats = (c.getAttribute('data-category')||'').split(' ');
+      if(cats.indexOf(category) !== -1){
+        c.style.display='flex';
+      } else {
+        c.style.display='none';
+      }
+    }
+  });
+}
+
+function openModal(id){
+  var m = document.getElementById(id);
+  if(m){ m.style.display='block'; document.body.style.overflow='hidden'; }
+}
+function closeModal(id){
+  var m = document.getElementById(id);
+  if(m){ m.style.display='none'; document.body.style.overflow=''; }
+}
 window.onclick=function(e){
   document.querySelectorAll('.modal').forEach(function(m){
     if(e.target===m){m.style.display='none'; document.body.style.overflow='';}
